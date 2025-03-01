@@ -1,0 +1,38 @@
+
+["Configs for WorldgenRevisited"]
+	#-1 = No carvers, not even vanilla. 0 = 1.12 retrogen, 1 = 1.16, 2 = current version vanilla.
+	#1.12 mode is suggested as 1.16 has issues regarding tunnels not connecting properly.
+	#Default=1
+	worldgen_type = 2
+	#Enable or disable cheese and spaghetti caves (1.18+ caves).
+	#These caves are the larger caverns and connecting caves found in modern Minecraft. 
+	#Default=true
+	enable_cheese_and_spaghetti_caves = true
+	#Eable/disable deepslate generation. I highly recommended that you install the deepslate accessory patch as
+	#it will add stone to the list of materials that can spawn deepslate-level ores. This patch is not added by default as some mods might not properly limit their deepslate ores to deepslate level, thus causing ores to appear at a high y-level.
+	#Default=true
+	enable_deepslate = true
+	#Enable/disable deepslate ores when deepslate generation is disable. 
+	#Default=false
+	enable_deepslate_ores_when_deepslate_is_disabled = false
+	#** EXPERIMENTAL ** World features (including ore groups, stone groups, non-cave features, etc) to remove.
+	#Use /listallfeatures <partial name> to list active features. Tuff and granite might not be fully removed due to 
+	#an existing bug. Features from certain mods might not be removed properly at this time due to an existing bug. 
+	#Example entry: ["minecraft:ore_diorite_upper", "minecraft:ore_diorite_lower", "minecraft:trees_savanna"]. 
+	#Default=[]
+	features_to_remove = []
+	#** EXPERIMENTAL **
+	#Change ore frequencies. Use /listallfeatures <likely ore name> to get the ore key.
+	#Example entry: ["minecraft:ore_diorite_upper=3", "minecraft:ore_diorite_lower=0.2"],
+	#where 3 will 3x the ore and 0.2 will 0.2x the ore. Specific feature types have a maximum frequency. Setting
+	#a value above that frequency will cap the frequency to that feature's maximum automatically. Only works on 
+	#ore/underground features at this time. Might not work on modded ores. 
+	#Default=[]
+	feature_frequencies = []
+	#Change carver/cave frequencies. Use /listallcarvers to get a list of active carvers.
+	#This option does not impact the frequencies of large/organic looking caves. This option only affects canyons and tunnels. Acts like feature frequency multipliers, will 3x or 0.5x the default carver rate. Can be used to customize worldgen type carver frequencies. Default=[]
+	carver_multiply_frequencies = []
+	#Override carver/cave frequencies. Use /listallcarvers to get a list of active carvers with their probabilities.
+	#Requires the exact probability. For instance, "worldgenrevisited:v12_caves=0.4" for 1.12 style caves (default is 0.15, sets to 0.4). Useful defaults: minecraft:canyon=0.01, minecraft:cave=0.15, (extra underground) minecraft:cave=0.07, minecraft:nether_cave=0.2. Can be used to customize worldgen type carver frequencies. Default=[]
+	carver_override_frequencies = []
+

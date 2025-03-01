@@ -1,0 +1,1017 @@
+# The phrases support full color (hex) code, and some variables.
+# Keep in mind that some variables will not work for certain lines.
+# Just keep them where there are now and everything will be okay :)
+# Some lines can have global variables set. For the player who will be affected. For example /heal Zrips then Zrips data will be used as variable
+# [serverName] to show server name
+# [playerName] to show target player name
+# [playerDisplayName] to show target player display name
+# [lvl] to show target player level
+# [exp] to show target player total exp
+# [hp] to show target player health
+# [maxHp] to show target player max health
+# [hunger] to show target player hunger level
+# [gameMode] to show target player gamemode
+# [prefix] to show target player prefix if possible
+# [suffix] to show target player suffix if possible
+# Sender is console or player who performs the command. For example Zrips performs /heal Zhax then Zrips data will be used
+# [senderName] to show Sender player name
+# [senderDisplayName] to show Sender player display name
+# [senderLvl] to show Sender player level
+# [senderExp] to show Sender player total exp
+# [senderHp] to show Sender player health
+# [senderMaxHp] to show Sender player max health
+# [senderHunger] to show Sender player hunger level
+# [senderGameMode] to show Sender player gamemode
+# [senderPrefix] to show Sender player prefix if possible
+# [senderSuffix] to show Sender player suffix if possible
+# Source is player which is being used for extra info. For example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+# [sourceName] to show source player name
+# [sourceDisplayName] to show source player display name
+# [sourceLvl] to show source player level
+# [sourceExp] to show source player total exp
+# [sourceHp] to show source player health
+# [sourceMaxHp] to show source player max health
+# [sourceHunger] to show source player hunger level
+# [sourceGameMode] to show source player gamemode
+# [sourcePrefix] to show source player prefix if possible
+# [sourceSuffix] to show source player suffix if possible
+# ***********************************************
+# Some lines support the option to send them to custom places, like action bar, title, sub-title, or even create JSON/clickable messages
+# If the line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+# If the line starts with !actionbar! then player will get action bar message defined after this variable
+# If the line starts with !actionbar:[seconds]! then player will get action bar message for a defined amount of time
+# If the line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+# If the line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case it is used after !broadcast! then everyone who is online will get this custom text message
+# If the line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If the line starts with !bossbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+# To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
+# <T> and </T> required, other is optional
+# Use /n to break line
+# To have more than one JSON message use <Next>
+# <C> performs command as a player who clicked
+# <CC> performs command from console once
+# <CCI> performs command from console every time player clicks text
+# <URL> includes url
+
+info:
+  # Use !prefix! in any locale line to automatically include this prefix
+  prefix: '&e[&aCMI&e] '
+  NoPermission: '&cYou don''t have permission!'
+  CantHavePermission: '&cYou can''t have this permission!'
+  WrongGroup: '&cYou are in wrong group for this!'
+  NoPlayerPermission: '&c[playerName] doesn''t have permission for: [permission]'
+  Ingame: '&cYou can only use this in game!'
+  NoInformation: '&cNo information found!'
+  Console: '&6Server'
+  FromConsole: '&cYou can only use this in the console!'
+  NotOnline: '&cThe player is not online!'
+  NobodyOnline: '&cThere is no one online!'
+  NoPlayer: '&cCan''t find player with this name! (&6[name]&c)'
+  NoCommand: '&cThere is no command by this name!'
+  cantFindCommand: '&5Couldn''t find &7[%1]&5 command, did you mean &7[%2]&5?'
+  nolocation: '&4Can''t find suitable location'
+  FeatureNotEnabled: '&cThis feature is not enabled!'
+  ModuleNotEnabled: '&cThis module is not enabled!'
+  versionNotSupported: '&cServer version is not supported for this feature'
+  spigotNotSupported: '&cYou need PaperSpigot branch type server for this to work'
+  bungeeNoGo: '&cThis feature will not work on bungee network based servers'
+  clickToTeleport: '&eClick to teleport'
+  UseMaterial: '&4Please use material names!'
+  IncorrectMaterial: '&4Incorrect material name!'
+  UseInteger: '&4Please use numbers!'
+  UseBoolean: '&4Please use True or False!'
+  NoLessThan: '&4Number can''t be less than [amount]!'
+  NoMoreThan: '&4Value can''t be more than [amount]'
+  NoWorld: '&4Can''t find world with this name!'
+  IncorrectLocation: '&4Location defined incorrectly!'
+  Show: '&eShow'
+  Remove: '&cRemove'
+  Back: '&eBack'
+  Forward: '&eForward'
+  Update: '&eUpdate'
+  Save: '&eSave'
+  Delete: '&cDelete'
+  Click: '&eClick'
+  Preview: '&ePreview'
+  PasteOld: '&ePaste old'
+  ClickToPaste: '&eClick to paste into chat'
+  CantTeleportWorld: '&eYou can''t teleport to this world'
+  CantTeleportNoWorld: '&cTarget world doesn''t exist. Teleportation canceled'
+  ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
+  teleported: '&eYou have been teleported.'
+  PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
+  Spliter: '&e--------------------------------------------------'
+  SpliterValue: '&e------------------ &6[value] &e------------------'
+  singleSpliter: '&e-'
+  SpliterMiddle: ' &6[value] '
+  ListSpliter: ', '
+  ProgressBarFill: '&2▏'
+  ProgressBarEmpty: '&e▏'
+  nothingInHand: '!actionbar!&eYou need to hold item in hand'
+  nothingInHandLeather: '&eYou need to hold leather item in hand'
+  nothingToShow: '&eNothing to show'
+  noItem: '&cCan''t find item'
+  dontHaveItem: '&cYou don''t have &6[amount]x [itemName] &cin your inventory'
+  wrongWorld: '&cCan''t do this in this world'
+  differentWorld: '&cDifferent worlds'
+  HaveItem: '&cYou have &6[amount]x [itemName] &cin your inventory'
+  cantDoInGamemode: '&eYou can''t do this in this game mode'
+  cantDoForPlayer: '&eYou can''t do this to &6[playerDisplayName]'
+  cantDoForYourSelf: '&eYou can''t do this to yourself'
+  cantDetermineMobType: '&cCan''t determine mob type from &e[type] &cvariable'
+  cantRename: '!actionbar!&eYou can''t use this name'
+  confirmRedefine: '&eClick to confirm redefining'
+  cantEdit: '&eYou can''t edit this'
+  wrongName: '&cWrong name'
+  unknown: unknown
+  invalidName: '&cInvalid name'
+  alreadyexist: '&4This name is taken'
+  dontexist: '&4Nothing found by this name'
+  worldDontExist: '&cTarget world can''t be accessed anymore. Can''t teleport you
+    there!'
+  notSet: not set
+  lookAtSign: '&eLook at sign'
+  lookAtBlock: '&eLook at block'
+  lookAtEntity: '&eLook at entity'
+  noSpace: '&eNot enough free space'
+  notOnGround: '&eYou can''t perform this while flying'
+  bungee:
+    Online: '&6Online'
+    Offline: '&cOffline'
+    not: '&cServer doesn''t belong to bungee network'
+    noserver: '&cCan''t find server by this name!'
+    server: '&eServer: &7[name]'
+  variables:
+    am: '&eAM'
+    pm: '&ePM'
+    Online: '&6Online'
+    Offline: '&cOffline'
+    TrueColor: '&2'
+    FalseColor: '&c'
+    'True': '&6True'
+    'False': '&cFalse'
+    Enabled: '&6Enabled'
+    Disabled: '&cDisabled'
+    survival: '&6Survival'
+    creative: '&6Creative'
+    adventure: '&6Adventure'
+    spectator: '&6Spectator'
+    flying: '&6Flying'
+    notflying: '&6Not flying'
+  Inventory:
+    Full: '&5Your inventory is full. Can''t add item'
+    FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
+  TimeNotRecorded: '&e-No record-'
+  months: '&e[months] &6months '
+  oneMonth: '&e[months] &6month '
+  weeks: '&e[weeks] &6weeks '
+  oneWeek: '&e[weeks] &6week '
+  years: '&e[years] &6years '
+  oneYear: '&e[years] &6year '
+  day: '&e[days] &6days '
+  oneDay: '&e[days] &6day '
+  hour: '&e[hours] &6hours '
+  oneHour: '&e[hours] &6hour '
+  min: '&e[mins] &6min '
+  sec: '&e[secs] &6sec '
+  nextPageConsole: '&fFor next page perform &5[command]'
+  prevPage: '&2----<< &6Prev '
+  prevCustomPage: '&2----<< &6[value] '
+  prevPageGui: '&6Previous page '
+  prevPageClean: '&6Prev '
+  prevPageOff: '&2----<< &7Prev '
+  prevCustomPageOff: '&2----<< &7[value] '
+  prevPageHover: '&7<<<'
+  firstPageHover: '&7|<'
+  nextPage: '&6 Next &2>>----'
+  nextCustomPage: '&6 [value] &2>>----'
+  nextPageGui: '&6Next Page'
+  nextPageClean: '&6 Next'
+  nextPageOff: '&7 Next &2>>----'
+  nextCustomPageOff: '&7 [value] &2>>----'
+  nextPageHover: '&7>>>'
+  lastPageHover: '&7>|'
+  pageCount: '&2[current]&7/&2[total]'
+  pageCountHover: '&e[totalEntries] entries'
+  skullOwner: '!actionbar!&7Owner:&r [playerName]'
+  mobHeadName: '&eHead of &f[mobName]'
+  circle: '&3Circle'
+  square: '&5Square'
+  clear: '&7Clear'
+  protectedArea: '&cProtected area. Can''t do this here.'
+  valueToLong: '&eValue is too high. Max: [max]'
+  valueToShort: '&eValue is too low. Min: [min]'
+  pickIcon: '&8Pick icon'
+  Spawner: '&r[type] Spawner'
+  DamageCause:
+    block_explosion: Explosion
+    contact: Block Damage
+    cramming: cramming
+    custom: Unknown
+    dragon_breath: Dragon breath
+    drowning: Drowning
+    dryout: dryout
+    entity_attack: Entity attack
+    entity_explosion: Explosion
+    entity_sweep_attack: entity sweep attack
+    fall: Fall
+    falling_block: Falling block
+    fire: Fire
+    fire_tick: Fire
+    fly_into_wall: Fly into wall
+    freeze: freeze
+    hot_floor: Magma block
+    lava: Lava
+    lightning: Lightning
+    magic: Magic
+    melting: Melting
+    poison: Poison
+    projectile: Projectile
+    starvation: Starvation
+    suffocation: Suffocation
+    suicide: Suicide
+    thorns: Thorns
+    void: Void
+    wither: Wither
+  EntityType:
+    alexsmobs_alligator_snapping_turtle: Alexsmobs alligator snapping turtle
+    alexsmobs_anaconda: Alexsmobs anaconda
+    alexsmobs_anaconda_part: Alexsmobs anaconda part
+    alexsmobs_anteater: Alexsmobs anteater
+    alexsmobs_bald_eagle: Alexsmobs bald eagle
+    alexsmobs_bison: Alexsmobs bison
+    alexsmobs_blobfish: Alexsmobs blobfish
+    alexsmobs_bone_serpent: Alexsmobs bone serpent
+    alexsmobs_bone_serpent_part: Alexsmobs bone serpent part
+    alexsmobs_bunfungus: Alexsmobs bunfungus
+    alexsmobs_cachalot_echo: Alexsmobs cachalot echo
+    alexsmobs_cachalot_whale: Alexsmobs cachalot whale
+    alexsmobs_capuchin_monkey: Alexsmobs capuchin monkey
+    alexsmobs_catfish: Alexsmobs catfish
+    alexsmobs_centipede_body: Alexsmobs centipede body
+    alexsmobs_centipede_head: Alexsmobs centipede head
+    alexsmobs_centipede_tail: Alexsmobs centipede tail
+    alexsmobs_cockroach: Alexsmobs cockroach
+    alexsmobs_cockroach_egg: Alexsmobs cockroach egg
+    alexsmobs_comb_jelly: Alexsmobs comb jelly
+    alexsmobs_cosmaw: Alexsmobs cosmaw
+    alexsmobs_cosmic_cod: Alexsmobs cosmic cod
+    alexsmobs_crimson_mosquito: Alexsmobs crimson mosquito
+    alexsmobs_crocodile: Alexsmobs crocodile
+    alexsmobs_crow: Alexsmobs crow
+    alexsmobs_devils_hole_pupfish: Alexsmobs devils hole pupfish
+    alexsmobs_dropbear: Alexsmobs dropbear
+    alexsmobs_elephant: Alexsmobs elephant
+    alexsmobs_emu: Alexsmobs emu
+    alexsmobs_emu_egg: Alexsmobs emu egg
+    alexsmobs_endergrade: Alexsmobs endergrade
+    alexsmobs_enderiophage: Alexsmobs enderiophage
+    alexsmobs_enderiophage_rocket: Alexsmobs enderiophage rocket
+    alexsmobs_flutter: Alexsmobs flutter
+    alexsmobs_fly: Alexsmobs fly
+    alexsmobs_flying_fish: Alexsmobs flying fish
+    alexsmobs_frilled_shark: Alexsmobs frilled shark
+    alexsmobs_froststalker: Alexsmobs froststalker
+    alexsmobs_gazelle: Alexsmobs gazelle
+    alexsmobs_gelada_monkey: Alexsmobs gelada monkey
+    alexsmobs_giant_squid: Alexsmobs giant squid
+    alexsmobs_gorilla: Alexsmobs gorilla
+    alexsmobs_grizzly_bear: Alexsmobs grizzly bear
+    alexsmobs_gust: Alexsmobs gust
+    alexsmobs_guster: Alexsmobs guster
+    alexsmobs_hammerhead_shark: Alexsmobs hammerhead shark
+    alexsmobs_hemolymph: Alexsmobs hemolymph
+    alexsmobs_hummingbird: Alexsmobs hummingbird
+    alexsmobs_ice_shard: Alexsmobs ice shard
+    alexsmobs_jerboa: Alexsmobs jerboa
+    alexsmobs_kangaroo: Alexsmobs kangaroo
+    alexsmobs_komodo_dragon: Alexsmobs komodo dragon
+    alexsmobs_laviathan: Alexsmobs laviathan
+    alexsmobs_leafcutter_ant: Alexsmobs leafcutter ant
+    alexsmobs_lobster: Alexsmobs lobster
+    alexsmobs_maned_wolf: Alexsmobs maned wolf
+    alexsmobs_mantis_shrimp: Alexsmobs mantis shrimp
+    alexsmobs_mimicube: Alexsmobs mimicube
+    alexsmobs_mimic_octopus: Alexsmobs mimic octopus
+    alexsmobs_moose: Alexsmobs moose
+    alexsmobs_mosquito_spit: Alexsmobs mosquito spit
+    alexsmobs_mungus: Alexsmobs mungus
+    alexsmobs_orca: Alexsmobs orca
+    alexsmobs_platypus: Alexsmobs platypus
+    alexsmobs_pollen_ball: Alexsmobs pollen ball
+    alexsmobs_raccoon: Alexsmobs raccoon
+    alexsmobs_rattlesnake: Alexsmobs rattlesnake
+    alexsmobs_roadrunner: Alexsmobs roadrunner
+    alexsmobs_rocky_roller: Alexsmobs rocky roller
+    alexsmobs_sand_shot: Alexsmobs sand shot
+    alexsmobs_seagull: Alexsmobs seagull
+    alexsmobs_seal: Alexsmobs seal
+    alexsmobs_sea_bear: Alexsmobs sea bear
+    alexsmobs_shark_tooth_arrow: Alexsmobs shark tooth arrow
+    alexsmobs_shoebill: Alexsmobs shoebill
+    alexsmobs_skelewag: Alexsmobs skelewag
+    alexsmobs_snow_leopard: Alexsmobs snow leopard
+    alexsmobs_soul_vulture: Alexsmobs soul vulture
+    alexsmobs_spectre: Alexsmobs spectre
+    alexsmobs_squid_grapple: Alexsmobs squid grapple
+    alexsmobs_straddleboard: Alexsmobs straddleboard
+    alexsmobs_straddler: Alexsmobs straddler
+    alexsmobs_stradpole: Alexsmobs stradpole
+    alexsmobs_sunbird: Alexsmobs sunbird
+    alexsmobs_tarantula_hawk: Alexsmobs tarantula hawk
+    alexsmobs_tasmanian_devil: Alexsmobs tasmanian devil
+    alexsmobs_terrapin: Alexsmobs terrapin
+    alexsmobs_tiger: Alexsmobs tiger
+    alexsmobs_tossed_item: Alexsmobs tossed item
+    alexsmobs_toucan: Alexsmobs toucan
+    alexsmobs_tusklin: Alexsmobs tusklin
+    alexsmobs_vine_lasso: Alexsmobs vine lasso
+    alexsmobs_void_portal: Alexsmobs void portal
+    alexsmobs_void_worm: Alexsmobs void worm
+    alexsmobs_void_worm_part: Alexsmobs void worm part
+    alexsmobs_void_worm_shot: Alexsmobs void worm shot
+    alexsmobs_warped_mosco: Alexsmobs warped mosco
+    alexsmobs_warped_toad: Alexsmobs warped toad
+    alternacraft_acro: Alternacraft acro
+    alternacraft_allosaurus: Alternacraft allosaurus
+    alternacraft_atroci: Alternacraft atroci
+    alternacraft_baryonyx: Alternacraft baryonyx
+    alternacraft_baryonyx_gen2: Alternacraft baryonyx gen2
+    alternacraft_carcha: Alternacraft carcha
+    alternacraft_carno: Alternacraft carno
+    alternacraft_ceratosuchops: Alternacraft ceratosuchops
+    alternacraft_compy: Alternacraft compy
+    alternacraft_deinonychus: Alternacraft deinonychus
+    alternacraft_dromaeo: Alternacraft dromaeo
+    alternacraft_drypto: Alternacraft drypto
+    alternacraft_giga: Alternacraft giga
+    alternacraft_indominus: Alternacraft indominus
+    alternacraft_indoraptor_alterna: Alternacraft indoraptor alterna
+    alternacraft_indoraptor_gen2: Alternacraft indoraptor gen2
+    alternacraft_jpspino: Alternacraft jpspino
+    alternacraft_malusaurus: Alternacraft malusaurus
+    alternacraft_moros: Alternacraft moros
+    alternacraft_mosasaurus: Alternacraft mosasaurus
+    alternacraft_nanuq: Alternacraft nanuq
+    alternacraft_oxalaia: Alternacraft oxalaia
+    alternacraft_pyro: Alternacraft pyro
+    alternacraft_scorpius: Alternacraft scorpius
+    alternacraft_spino: Alternacraft spino
+    alternacraft_theri: Alternacraft theri
+    alternacraft_tylosaurus: Alternacraft tylosaurus
+    alternacraft_tyrannosaurus: Alternacraft tyrannosaurus
+    alternacraft_velociraptor: Alternacraft velociraptor
+    apples_invisiblecart: Apples invisiblecart
+    apples_lightemitter: Apples lightemitter
+    area_effect_cloud: Area effect cloud
+    armor_stand: Armor stand
+    armourers_workshop_mannequin: Armourers workshop mannequin
+    armourers_workshop_seat: Armourers workshop seat
+    arrow: Arrow
+    axolotl: Axolotl
+    bat: Bat
+    bee: Bee
+    biomesoplenty_boat: Biomesoplenty boat
+    blaze: Blaze
+    bmorph_morph_entity: Bmorph morph entity
+    boat: Boat
+    born_in_chaos_v1_baby_skeleton: Born in chaos v1 baby skeleton
+    born_in_chaos_v1_baby_skeleton_2: Born in chaos v1 baby skeleton 2
+    born_in_chaos_v1_baby_skeleton_minion: Born in chaos v1 baby skeleton minion
+    born_in_chaos_v1_barrel_zombie: Born in chaos v1 barrel zombie
+    born_in_chaos_v1_bloody_gadfly: Born in chaos v1 bloody gadfly
+    born_in_chaos_v1_bonescaller: Born in chaos v1 bonescaller
+    born_in_chaos_v1_bonescaller_not_despawn: Born in chaos v1 bonescaller not despawn
+    born_in_chaos_v1_bone_imp: Born in chaos v1 bone imp
+    born_in_chaos_v1_bone_imp_2: Born in chaos v1 bone imp 2
+    born_in_chaos_v1_bone_imp_minion: Born in chaos v1 bone imp minion
+    born_in_chaos_v1_controlled_baby_skeleton: Born in chaos v1 controlled baby skeleton
+    born_in_chaos_v1_corpse_fish: Born in chaos v1 corpse fish
+    born_in_chaos_v1_corpse_fly: Born in chaos v1 corpse fly
+    born_in_chaos_v1_dark_vortex: Born in chaos v1 dark vortex
+    born_in_chaos_v1_decaying_zombie: Born in chaos v1 decaying zombie
+    born_in_chaos_v1_decaying_zombie_not_despawn: Born in chaos v1 decaying zombie
+      not despawn
+    born_in_chaos_v1_decrepit_skeleton: Born in chaos v1 decrepit skeleton
+    born_in_chaos_v1_diamond_termite: Born in chaos v1 diamond termite
+    born_in_chaos_v1_dire_hound_leader: Born in chaos v1 dire hound leader
+    born_in_chaos_v1_door_knight: Born in chaos v1 door knight
+    born_in_chaos_v1_door_knight_not_despawn: Born in chaos v1 door knight not despawn
+    born_in_chaos_v1_dread_hound: Born in chaos v1 dread hound
+    born_in_chaos_v1_dread_hound_not_despawn: Born in chaos v1 dread hound not despawn
+    born_in_chaos_v1_fallen_chaos_knight: Born in chaos v1 fallen chaos knight
+    born_in_chaos_v1_felsteed: Born in chaos v1 felsteed
+    born_in_chaos_v1_firelight: Born in chaos v1 firelight
+    born_in_chaos_v1_firelight_not_despawn: Born in chaos v1 firelight not despawn
+    born_in_chaos_v1_glutton_fish: Born in chaos v1 glutton fish
+    born_in_chaos_v1_infernal_spirit: Born in chaos v1 infernal spirit
+    born_in_chaos_v1_lords_felsteed: Born in chaos v1 lords felsteed
+    born_in_chaos_v1_lord_pumpkinhead: Born in chaos v1 lord pumpkinhead
+    born_in_chaos_v1_lord_pumpkinhead_head: Born in chaos v1 lord pumpkinhead head
+    born_in_chaos_v1_lord_pumpkinhead_withouta_horse: Born in chaos v1 lord pumpkinhead
+      withouta horse
+    born_in_chaos_v1_lord_the_headless: Born in chaos v1 lord the headless
+    born_in_chaos_v1_maggot: Born in chaos v1 maggot
+    born_in_chaos_v1_mr_pumpkin: Born in chaos v1 mr pumpkin
+    born_in_chaos_v1_mr_pumpkin_controlled: Born in chaos v1 mr pumpkin controlled
+    born_in_chaos_v1_nightmare_stalker: Born in chaos v1 nightmare stalker
+    born_in_chaos_v1_phantom_creeper: Born in chaos v1 phantom creeper
+    born_in_chaos_v1_phantom_creeper_copy: Born in chaos v1 phantom creeper copy
+    born_in_chaos_v1_projectile_intoxicatind_bomb: Born in chaos v1 projectile intoxicatind
+      bomb
+    born_in_chaos_v1_projectile_pumpkin_pistol: Born in chaos v1 projectile pumpkin
+      pistol
+    born_in_chaos_v1_projectile_pumpkin_pistol_2: Born in chaos v1 projectile pumpkin
+      pistol 2
+    born_in_chaos_v1_projectile_pumpkin_staff: Born in chaos v1 projectile pumpkin
+      staff
+    born_in_chaos_v1_projectile_pumpkin_staff_2: Born in chaos v1 projectile pumpkin
+      staff 2
+    born_in_chaos_v1_projectile_staffof_blindness: Born in chaos v1 projectile staffof
+      blindness
+    born_in_chaos_v1_projectile_staffof_magic_arrows: Born in chaos v1 projectile
+      staffof magic arrows
+    born_in_chaos_v1_projectile_staffof_magic_arrows_2: Born in chaos v1 projectile
+      staffof magic arrows 2
+    born_in_chaos_v1_pumpkinhead: Born in chaos v1 pumpkinhead
+    born_in_chaos_v1_pumpkin_bomb: Born in chaos v1 pumpkin bomb
+    born_in_chaos_v1_pumpkin_spirit: Born in chaos v1 pumpkin spirit
+    born_in_chaos_v1_restless_spirit: Born in chaos v1 restless spirit
+    born_in_chaos_v1_riding_felsteed: Born in chaos v1 riding felsteed
+    born_in_chaos_v1_riding_lords_felsteed: Born in chaos v1 riding lords felsteed
+    born_in_chaos_v1_scarlet_persecutor: Born in chaos v1 scarlet persecutor
+    born_in_chaos_v1_seared_spirit: Born in chaos v1 seared spirit
+    born_in_chaos_v1_seared_spirit_not_despawn: Born in chaos v1 seared spirit not
+      despawn
+    born_in_chaos_v1_senor_pumpkin: Born in chaos v1 senor pumpkin
+    born_in_chaos_v1_shy_spirit: Born in chaos v1 shy spirit
+    born_in_chaos_v1_sir_pumpkinhead: Born in chaos v1 sir pumpkinhead
+    born_in_chaos_v1_sir_pumpkinhead_without_horse: Born in chaos v1 sir pumpkinhead
+      without horse
+    born_in_chaos_v1_sir_the_headless: Born in chaos v1 sir the headless
+    born_in_chaos_v1_skeleton_demoman: Born in chaos v1 skeleton demoman
+    born_in_chaos_v1_skeleton_thrasher: Born in chaos v1 skeleton thrasher
+    born_in_chaos_v1_skeleton_thrasher_not_despawn: Born in chaos v1 skeleton thrasher
+      not despawn
+    born_in_chaos_v1_spirit_guide: Born in chaos v1 spirit guide
+    born_in_chaos_v1_spirit_guide_assistant: Born in chaos v1 spirit guide assistant
+    born_in_chaos_v1_supreme_bonescaller: Born in chaos v1 supreme bonescaller
+    born_in_chaos_v1_supreme_bonescaller_not_despawn: Born in chaos v1 supreme bonescaller
+      not despawn
+    born_in_chaos_v1_supreme_bonescaller_stage_2: Born in chaos v1 supreme bonescaller
+      stage 2
+    born_in_chaos_v1_swarmer: Born in chaos v1 swarmer
+    born_in_chaos_v1_thornshell_crab: Born in chaos v1 thornshell crab
+    born_in_chaos_v1_wither_scuttler: Born in chaos v1 wither scuttler
+    born_in_chaos_v1_zombie_bruiser: Born in chaos v1 zombie bruiser
+    born_in_chaos_v1_zombie_clown: Born in chaos v1 zombie clown
+    born_in_chaos_v1_zombie_clown_not_despawn: Born in chaos v1 zombie clown not despawn
+    born_in_chaos_v1_zombie_fisherman: Born in chaos v1 zombie fisherman
+    cat: Cat
+    cave_spider: Cave spider
+    chicken: Chicken
+    chococraft_chocobo: Chococraft chocobo
+    cod: Cod
+    cofh_core_electric_arc: Cofh core electric arc
+    cofh_core_electric_field: Cofh core electric field
+    cofh_core_knife: Cofh core knife
+    corpse_corpse: Corpse corpse
+    cow: Cow
+    creeper: Creeper
+    decocraft_seat: Decocraft seat
+    dolphin: Dolphin
+    donkey: Donkey
+    dragon_fireball: Dragon fireball
+    dropped_item: Dropped item
+    drowned: Drowned
+    egg: Egg
+    elder_guardian: Elder guardian
+    enderman: Enderman
+    endermite: Endermite
+    ender_crystal: Ender crystal
+    ender_dragon: Ender dragon
+    ender_pearl: Ender pearl
+    ender_signal: Ender signal
+    enemyexpansion_angler: Enemyexpansion angler
+    enemyexpansion_baker: Enemyexpansion baker
+    enemyexpansion_banedasher: Enemyexpansion banedasher
+    enemyexpansion_biter: Enemyexpansion biter
+    enemyexpansion_boar: Enemyexpansion boar
+    enemyexpansion_bouncer: Enemyexpansion bouncer
+    enemyexpansion_bull: Enemyexpansion bull
+    enemyexpansion_cakerover: Enemyexpansion cakerover
+    enemyexpansion_caster: Enemyexpansion caster
+    enemyexpansion_cinder: Enemyexpansion cinder
+    enemyexpansion_cockatrice: Enemyexpansion cockatrice
+    enemyexpansion_crawler: Enemyexpansion crawler
+    enemyexpansion_direwolf: Enemyexpansion direwolf
+    enemyexpansion_dragonfly: Enemyexpansion dragonfly
+    enemyexpansion_dreadnought: Enemyexpansion dreadnought
+    enemyexpansion_equestrian: Enemyexpansion equestrian
+    enemyexpansion_errant: Enemyexpansion errant
+    enemyexpansion_eyestalker: Enemyexpansion eyestalker
+    enemyexpansion_fish_carrier: Enemyexpansion fish carrier
+    enemyexpansion_flutterfly: Enemyexpansion flutterfly
+    enemyexpansion_fly: Enemyexpansion fly
+    enemyexpansion_frigid: Enemyexpansion frigid
+    enemyexpansion_gabble: Enemyexpansion gabble
+    enemyexpansion_gallant: Enemyexpansion gallant
+    enemyexpansion_ghoul: Enemyexpansion ghoul
+    enemyexpansion_gladilad: Enemyexpansion gladilad
+    enemyexpansion_gladius: Enemyexpansion gladius
+    enemyexpansion_goblin: Enemyexpansion goblin
+    enemyexpansion_goblin_fear: Enemyexpansion goblin fear
+    enemyexpansion_guardsman: Enemyexpansion guardsman
+    enemyexpansion_hornet: Enemyexpansion hornet
+    enemyexpansion_huntsmanskeleton: Enemyexpansion huntsmanskeleton
+    enemyexpansion_intruder: Enemyexpansion intruder
+    enemyexpansion_invisicreeper: Enemyexpansion invisicreeper
+    enemyexpansion_kelpie: Enemyexpansion kelpie
+    enemyexpansion_ladybug: Enemyexpansion ladybug
+    enemyexpansion_marauder: Enemyexpansion marauder
+    enemyexpansion_meature: Enemyexpansion meature
+    enemyexpansion_orb: Enemyexpansion orb
+    enemyexpansion_petrifiedtroll: Enemyexpansion petrifiedtroll
+    enemyexpansion_petriman: Enemyexpansion petriman
+    enemyexpansion_pheromone_summon: Enemyexpansion pheromone summon
+    enemyexpansion_piecrab: Enemyexpansion piecrab
+    enemyexpansion_projectile_bouncer_kick_projectile: Enemyexpansion projectile bouncer
+      kick projectile
+    enemyexpansion_projectile_cast_spell: Enemyexpansion projectile cast spell
+    enemyexpansion_projectile_cinder_fire_charge: Enemyexpansion projectile cinder
+      fire charge
+    enemyexpansion_projectile_cinder_slice: Enemyexpansion projectile cinder slice
+    enemyexpansion_projectile_crawler_explosive: Enemyexpansion projectile crawler
+      explosive
+    enemyexpansion_projectile_enemy_melee_projectile: Enemyexpansion projectile enemy
+      melee projectile
+    enemyexpansion_projectile_frigid_touch_projectile: Enemyexpansion projectile frigid
+      touch projectile
+    enemyexpansion_projectile_gallant_swings: Enemyexpansion projectile gallant swings
+    enemyexpansion_projectile_ghoul_slash: Enemyexpansion projectile ghoul slash
+    enemyexpansion_projectile_ghoul_spit: Enemyexpansion projectile ghoul spit
+    enemyexpansion_projectile_gladius_ink: Enemyexpansion projectile gladius ink
+    enemyexpansion_projectile_healing_goo: Enemyexpansion projectile healing goo
+    enemyexpansion_projectile_huntsman_punch: Enemyexpansion projectile huntsman punch
+    enemyexpansion_projectile_pheromone_projectile: Enemyexpansion projectile pheromone
+      projectile
+    enemyexpansion_projectile_slimeball_throw: Enemyexpansion projectile slimeball
+      throw
+    enemyexpansion_projectile_sputter_fire_charge: Enemyexpansion projectile sputter
+      fire charge
+    enemyexpansion_projectile_troll_invincible: Enemyexpansion projectile troll invincible
+    enemyexpansion_projectile_troll_spit: Enemyexpansion projectile troll spit
+    enemyexpansion_projectile_wasp_sting_projectile: Enemyexpansion projectile wasp
+      sting projectile
+    enemyexpansion_propeller: Enemyexpansion propeller
+    enemyexpansion_ram: Enemyexpansion ram
+    enemyexpansion_ramsheared: Enemyexpansion ramsheared
+    enemyexpansion_rancher: Enemyexpansion rancher
+    enemyexpansion_reaver: Enemyexpansion reaver
+    enemyexpansion_rooster: Enemyexpansion rooster
+    enemyexpansion_scorpion: Enemyexpansion scorpion
+    enemyexpansion_senior: Enemyexpansion senior
+    enemyexpansion_silverking: Enemyexpansion silverking
+    enemyexpansion_silverpet: Enemyexpansion silverpet
+    enemyexpansion_slugger: Enemyexpansion slugger
+    enemyexpansion_spectre: Enemyexpansion spectre
+    enemyexpansion_sprinter: Enemyexpansion sprinter
+    enemyexpansion_sputter: Enemyexpansion sputter
+    enemyexpansion_starved: Enemyexpansion starved
+    enemyexpansion_tarantula: Enemyexpansion tarantula
+    enemyexpansion_troll: Enemyexpansion troll
+    enemyexpansion_vampire: Enemyexpansion vampire
+    enemyexpansion_wasp: Enemyexpansion wasp
+    enemyexpansion_wolfsbane: Enemyexpansion wolfsbane
+    enemyexpansion_zadybug: Enemyexpansion zadybug
+    enemyexpansion_zobgoblin: Enemyexpansion zobgoblin
+    evilcraft_anti_vengeance_beam: Evilcraft anti vengeance beam
+    evilcraft_attack_vengeance_beam: Evilcraft attack vengeance beam
+    evilcraft_biome_extract: Evilcraft biome extract
+    evilcraft_blood_pearl: Evilcraft blood pearl
+    evilcraft_broom: Evilcraft broom
+    evilcraft_controlled_zombie: Evilcraft controlled zombie
+    evilcraft_item_dark_stick: Evilcraft item dark stick
+    evilcraft_item_empowerable: Evilcraft item empowerable
+    evilcraft_item_undespawnable: Evilcraft item undespawnable
+    evilcraft_lightning_bomb_primed: Evilcraft lightning bomb primed
+    evilcraft_lightning_grenade: Evilcraft lightning grenade
+    evilcraft_necromancers_head: Evilcraft necromancers head
+    evilcraft_netherfish: Evilcraft netherfish
+    evilcraft_poisonous_libelle: Evilcraft poisonous libelle
+    evilcraft_redstone_grenade: Evilcraft redstone grenade
+    evilcraft_vengeance_spirit: Evilcraft vengeance spirit
+    evilcraft_weather_container: Evilcraft weather container
+    evilcraft_werewolf: Evilcraft werewolf
+    evoker: Evoker
+    evoker_fangs: Evoker fangs
+    experience_orb: Experience orb
+    falling_block: Falling block
+    fireball: Fireball
+    firework: Firework
+    fishing_hook: Fishing hook
+    forge_mod_animal: Forge mod animal
+    forge_mod_chest_horse: Forge mod chest horse
+    forge_mod_horse: Forge mod horse
+    forge_mod_minecart_container: Forge mod minecart container
+    forge_mod_monster: Forge mod monster
+    forge_mod_projectile: Forge mod projectile
+    forge_mod_tameable_animals: Forge mod tameable animals
+    fox: Fox
+    ghast: Ghast
+    giant: Giant
+    glow_item_frame: Glow item frame
+    glow_squid: Glow squid
+    goat: Goat
+    guardian: Guardian
+    hoglin: Hoglin
+    horse: Horse
+    husk: Husk
+    illusioner: Illusioner
+    iron_golem: Iron golem
+    item_frame: Item frame
+    leash_hitch: Leash hitch
+    lightning: Lightning
+    llama: Llama
+    llama_spit: Llama spit
+    magma_cube: Magma cube
+    marker: Marker
+    minecart: Minecart
+    minecart_chest: Minecart chest
+    minecart_command: Minecart command
+    minecart_furnace: Minecart furnace
+    minecart_hopper: Minecart hopper
+    minecart_mob_spawner: Minecart mob spawner
+    minecart_tnt: Minecart tnt
+    mule: Mule
+    mushroom_cow: Mushroom cow
+    mutantmonsters_body_part: Mutantmonsters body part
+    mutantmonsters_creeper_minion: Mutantmonsters creeper minion
+    mutantmonsters_creeper_minion_egg: Mutantmonsters creeper minion egg
+    mutantmonsters_endersoul_clone: Mutantmonsters endersoul clone
+    mutantmonsters_endersoul_fragment: Mutantmonsters endersoul fragment
+    mutantmonsters_mutant_arrow: Mutantmonsters mutant arrow
+    mutantmonsters_mutant_creeper: Mutantmonsters mutant creeper
+    mutantmonsters_mutant_enderman: Mutantmonsters mutant enderman
+    mutantmonsters_mutant_skeleton: Mutantmonsters mutant skeleton
+    mutantmonsters_mutant_snow_golem: Mutantmonsters mutant snow golem
+    mutantmonsters_mutant_zombie: Mutantmonsters mutant zombie
+    mutantmonsters_skull_spirit: Mutantmonsters skull spirit
+    mutantmonsters_spider_pig: Mutantmonsters spider pig
+    mutantmonsters_throwable_block: Mutantmonsters throwable block
+    ocelot: Ocelot
+    painting: Painting
+    panda: Panda
+    parrot: Parrot
+    phantom: Phantom
+    pig: Pig
+    piglin: Piglin
+    piglin_brute: Piglin brute
+    pillager: Pillager
+    player: Player
+    polar_bear: Polar bear
+    primed_tnt: Primed tnt
+    pufferfish: Pufferfish
+    rabbit: Rabbit
+    ravager: Ravager
+    rpgsmw_projectile_amethisstscane: Rpgsmw projectile amethisstscane
+    rpgsmw_projectile_amethystmagickshot_1: Rpgsmw projectile amethystmagickshot 1
+    rpgsmw_projectile_copper_book_shot_spell_2: Rpgsmw projectile copper book shot
+      spell 2
+    rpgsmw_projectile_copper_knukleshot_2: Rpgsmw projectile copper knukleshot 2
+    rpgsmw_projectile_diamondmagickbookkk: Rpgsmw projectile diamondmagickbookkk
+    rpgsmw_projectile_enc: Rpgsmw projectile enc
+    rpgsmw_projectile_goldenwandproject: Rpgsmw projectile goldenwandproject
+    rpgsmw_projectile_icescaneshot: Rpgsmw projectile icescaneshot
+    rpgsmw_projectile_ironscaneb: Rpgsmw projectile ironscaneb
+    rpgsmw_projectile_iron_k_shot: Rpgsmw projectile iron k shot
+    rpgsmw_projectile_nephrilscaneshot: Rpgsmw projectile nephrilscaneshot
+    rpgsmw_projectile_projectile_miphril_stuff: Rpgsmw projectile projectile miphril
+      stuff
+    rpgsmw_projectile_projectile_spell_2_miphril_staff: Rpgsmw projectile projectile
+      spell 2 miphril staff
+    rpgsmw_projectile_spell_1_shot_emerald_cluster: Rpgsmw projectile spell 1 shot
+      emerald cluster
+    rpgsmw_projectile_spell_2_emerald_cluster: Rpgsmw projectile spell 2 emerald cluster
+    rpgsmw_projectile_spell_3_heal_miphril_staff: Rpgsmw projectile spell 3 heal miphril
+      staff
+    rpgsmw_projectile_two_projectile_miphril_staff: Rpgsmw projectile two projectile
+      miphril staff
+    salmon: Salmon
+    securitycraft_bouncingbetty: Securitycraft bouncingbetty
+    securitycraft_bullet: Securitycraft bullet
+    securitycraft_imsbomb: Securitycraft imsbomb
+    securitycraft_securitycamera: Securitycraft securitycamera
+    securitycraft_sentry: Securitycraft sentry
+    sheep: Sheep
+    shulker: Shulker
+    shulker_bullet: Shulker bullet
+    silverfish: Silverfish
+    skeleton: Skeleton
+    skeleton_horse: Skeleton horse
+    slime: Slime
+    small_fireball: Small fireball
+    snowball: Snowball
+    snowman: Snowman
+    sophisticatedbackpacks_everlasting_backpack_item: Sophisticatedbackpacks everlasting
+      backpack item
+    spectral_arrow: Spectral arrow
+    spider: Spider
+    splash_potion: Splash potion
+    squid: Squid
+    stray: Stray
+    strider: Strider
+    tconstruct_crystalshot: Tconstruct crystalshot
+    tconstruct_earth_slime: Tconstruct earth slime
+    tconstruct_efln_ball: Tconstruct efln ball
+    tconstruct_ender_slime: Tconstruct ender slime
+    tconstruct_fancy_item_frame: Tconstruct fancy item frame
+    tconstruct_flint_shuriken: Tconstruct flint shuriken
+    tconstruct_fluid_spit: Tconstruct fluid spit
+    tconstruct_glow_ball: Tconstruct glow ball
+    tconstruct_indestructible_item: Tconstruct indestructible item
+    tconstruct_quartz_shuriken: Tconstruct quartz shuriken
+    tconstruct_sky_slime: Tconstruct sky slime
+    tconstruct_terracube: Tconstruct terracube
+    thermal_basalz: Thermal basalz
+    thermal_basalz_projectile: Thermal basalz projectile
+    thermal_blitz: Thermal blitz
+    thermal_blitz_projectile: Thermal blitz projectile
+    thermal_blizz: Thermal blizz
+    thermal_blizz_projectile: Thermal blizz projectile
+    thermal_earth_grenade: Thermal earth grenade
+    thermal_earth_tnt: Thermal earth tnt
+    thermal_ender_grenade: Thermal ender grenade
+    thermal_ender_tnt: Thermal ender tnt
+    thermal_explosive_grenade: Thermal explosive grenade
+    thermal_fire_grenade: Thermal fire grenade
+    thermal_fire_tnt: Thermal fire tnt
+    thermal_glowstone_grenade: Thermal glowstone grenade
+    thermal_glowstone_tnt: Thermal glowstone tnt
+    thermal_ice_grenade: Thermal ice grenade
+    thermal_ice_tnt: Thermal ice tnt
+    thermal_lightning_grenade: Thermal lightning grenade
+    thermal_lightning_tnt: Thermal lightning tnt
+    thermal_nuke_grenade: Thermal nuke grenade
+    thermal_nuke_tnt: Thermal nuke tnt
+    thermal_phyto_grenade: Thermal phyto grenade
+    thermal_phyto_tnt: Thermal phyto tnt
+    thermal_redstone_grenade: Thermal redstone grenade
+    thermal_redstone_tnt: Thermal redstone tnt
+    thermal_slime_grenade: Thermal slime grenade
+    thermal_slime_tnt: Thermal slime tnt
+    thrown_exp_bottle: Thrown exp bottle
+    trader_llama: Trader llama
+    trident: Trident
+    tropical_fish: Tropical fish
+    turtle: Turtle
+    unknown: Unknown
+    vex: Vex
+    villager: Villager
+    vindicator: Vindicator
+    wandering_trader: Wandering trader
+    witch: Witch
+    wither: Wither
+    wither_skeleton: Wither skeleton
+    wither_skull: Wither skull
+    wolf: Wolf
+    zoglin: Zoglin
+    zombie: Zombie
+    zombie_horse: Zombie horse
+    zombie_villager: Zombie villager
+    zombified_piglin: Zombified piglin
+  # Avoid adding color codes to the enchant name
+  EnchantNames:
+    frost_walker: Frost_walker
+    unknown_enchant_40: Unknown_enchant_40
+    unknown_enchant_51: Unknown_enchant_51
+    arrow_knockback: Arrow_knockback
+    protection_environmental: Protection_environmental
+    protection_explosions: Protection_explosions
+    lure: Lure
+    silk_touch: Silk_touch
+    arrow_infinite: Arrow_infinite
+    vanishing_curse: Vanishing_curse
+    unknown_enchant_45: Unknown_enchant_45
+    unknown_enchant_48: Unknown_enchant_48
+    arrow_fire: Arrow_fire
+    piercing: Piercing
+    unknown_enchant_41: Unknown_enchant_41
+    protection_fire: Protection_fire
+    damage_all: Damage_all
+    unknown_enchant_39: Unknown_enchant_39
+    sweeping_edge: Sweeping_edge
+    unknown_enchant_38: Unknown_enchant_38
+    water_worker: Water_worker
+    binding_curse: Binding_curse
+    unknown_enchant_44: Unknown_enchant_44
+    damage_arthropods: Damage_arthropods
+    loot_bonus_mobs: Loot_bonus_mobs
+    dig_speed: Dig_speed
+    unknown_enchant_42: Unknown_enchant_42
+    quick_charge: Quick_charge
+    loyalty: Loyalty
+    protection_fall: Protection_fall
+    durability: Durability
+    knockback: Knockback
+    protection_projectile: Protection_projectile
+    oxygen: Oxygen
+    unknown_enchant_46: Unknown_enchant_46
+    unknown_enchant_49: Unknown_enchant_49
+    unknown_enchant_43: Unknown_enchant_43
+    impaling: Impaling
+    damage_undead: Damage_undead
+    luck: Luck
+    thorns: Thorns
+    multishot: Multishot
+    unknown_enchant_47: Unknown_enchant_47
+    fire_aspect: Fire_aspect
+    depth_strider: Depth_strider
+    arrow_damage: Arrow_damage
+    soul_speed: Soul_speed
+    unknown_enchant_50: Unknown_enchant_50
+    mending: Mending
+    riptide: Riptide
+    loot_bonus_blocks: Loot_bonus_blocks
+    channeling: Channeling
+  PotionEffectAliases:
+    speed:
+    - Speed
+    slowness:
+    - Slowness
+    haste:
+    - Haste
+    miningfatigue:
+    - Mining fatigue
+    strength:
+    - Strength
+    jumpboost:
+    - Jump boost
+    nausea:
+    - Nausea
+    regeneration:
+    - Regeneration
+    resistance:
+    - Resistance
+    fireresistance:
+    - Fire resistance
+    waterbreathing:
+    - Water breathing
+    invisibility:
+    - Invisibility
+    blindness:
+    - Blindness
+    nightvision:
+    - Night vision
+    hunger:
+    - Hunger
+    weakness:
+    - Weakness
+    poison:
+    - Poison
+    wither:
+    - Wither
+    healthboost:
+    - Health boost
+    absorption:
+    - Absorption
+    saturation:
+    - Saturation
+    glowing:
+    - Glowing
+    levitation:
+    - Levitation
+    luck:
+    - Luck
+    unluck:
+    - Unluck
+    slowfalling:
+    - Slow falling
+    conduitpower:
+    - Conduit power
+    dolphinsgrace:
+    - Dolphins grace
+    badomen:
+    - Bad omen
+    heroofthevillage:
+    - Hero of the village
+direction:
+  n: North
+  ne: North East
+  e: East
+  se: South East
+  s: South
+  sw: South West
+  w: West
+  nw: North West
+modify:
+  middlemouse: '&2Middle mouse click to edit'
+  qButtonEdit: '&2Click Q to edit'
+  newItem: '&7Place new item here'
+  newLine: '&2<NewLine>'
+  newLineHover: '&2Add new line'
+  newPage: '&2<NewPage>'
+  newPageHover: '&2Create new page'
+  removePage: '&c<RemovePage>'
+  removePageHover: '&cRemove page'
+  deleteSymbol: ' &c[X]'
+  deleteSymbolHover: '&cDelete &e[text]'
+  extraEditSymbol: ' &6!'
+  addSymbol: '&2[+]'
+  addSymbolHover: '&2Add new'
+  cancelSymbol: ' &7&l[X]'
+  cancelSymbolHover: '&aCancel'
+  acceptSymbol: ' &2&l[✔]'
+  acceptSymbolHover: '&aAccept'
+  denySymbol: ' &4&l[X]'
+  denySymbolHover: '&cDeny'
+  enabledSymbol: '&2[+]'
+  disabledSymbol: '&c[-]'
+  enabled: '&2Enabled'
+  disabled: '&cDisabled'
+  running: '&2Running'
+  paused: '&cPaused'
+  editSymbol: '&e✎'
+  editSymbolHover: '&eEdit &6[text]'
+  editLineColor: '&f'
+  listUpSymbol: '&6⇑'
+  listUpSymbolHover: '&eUp'
+  listDownSymbol: '&6⇓'
+  listDownSymbolHover: '&eDown'
+  listNumbering: '&e[number]. '
+  listAlign: '&80'
+  ChangeHover: '&eClick to change'
+  ChangeCommands: '&eCommands'
+  enabledColor: '&6'
+  disabledColor: '&7'
+  commandTitle: ' &e--- &6[name] &e---'
+  commandList: ' &e[command]  '
+  emptyLine: '&7[Empty line]'
+  commandEdit: '&eEdit list'
+  nameAddInfo: '&eEnter new name. Type &6cancel &eto cancel'
+  lineAddInfo: '&eEnter new line. Type &6cancel &eto cancel'
+  commandAddInfo: '&eEnter new command. Type &6cancel &eto cancel'
+  commandAddInformationHover: "&e[playerName] can be used to get player name \n&eTo\
+    \ include delay in commands: \n&edelay! 5 \n&eSpecialized commands are supported.\
+    \ More info at \n&ehttps://www.zrips.net/cmi/commands/specialized/"
+  commandEditInfo: '&eClick to paste old text. Type &6cancel &eto cancel action'
+  listLimit: '&eList can''t be bigger than &6[amount] &eentries'
+  commandEditInfoHover: '&eClick to paste old text'
+teleportation:
+  relocation: '!actionbar!&4Your teleport location was obstructed. You have been teleported
+    to a safe location.'
+econ:
+  noMoney: '&cYou have no money'
+  charged: '!actionbar!&fCharged: &6[amount]'
+  notEnoughMoney: '&cYou don''t have enough money. Required (&6[amount]&c)'
+  tooMuchMoney: '&cYou have too much money'
+Selection:
+  SelectPoints: '&cSelect 2 points with selection tool! AKA: &6[tool]'
+  PrimaryPoint: '&ePlaced &6Primary &eSelection Point [point]'
+  SecondaryPoint: '&ePlaced &6Secondary &eSelection Point [point]'
+  CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
+Location:
+  Title: '&8Players location'
+  Killer: '&eKiller: &6[killer]'
+  OneLiner: '&eLocation: &6[location]'
+  DeathReason: '&eDeath Reason: &6[reason]'
+  Full: '&7[world] &f[x]&7:&f[y]&7:&f[z]'
+  World: '&eWorld: &6[world]'
+  X: '&eX: &6[x]'
+  Y: '&eY: &6[y]'
+  Z: '&eZ: &6[z]'
+  Pitch: '&ePitch: &6[pitch]'
+  Yaw: '&eYaw: &6[yaw]'
+  WorldNames:
+  - world-&2World
+  - DIM1-&2Dim1
+  - alternadim-&2Alternadim
+  - DIM-1-&2Dim-1
+Locations: '&7Locations: '
+command:
+  help:
+    output:
+      usage: '&eUsage: &7%usage%'
+      cmdInfoFormat: '[command] &f- &e[description]'
+      cmdFormat: '&6/[command]&f[arguments]'
+      helpPageDescription: '&e* [description]'
+      explanation: '&e * [explanation]'
+      title: '&e------ ======= &6Help&e &e======= ------'
+  nocmd:
+    help:
+      info: '&eShows all available commands'
+      args: ''
+  clearcache:
+    help:
+      info: '&eClear cache'
+      args: ''
+  reload:
+    help:
+      info: '&eReloads plugins config and locale files'
+      args: ''
+    info:
+      feedback: '&6CMIL Configs and locale files reloaded! Took [ms]ms'
+      failedConfig: '&4Failed to load config file! Check spelling!'
+      failedLocale: '&4Failed to load locale file! Check spelling!'
