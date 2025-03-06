@@ -23,7 +23,7 @@ RED = "\033[91m"
 CYAN = "\033[96m"
 GRAY = "\033[90m"
 
-BASE_DIR = os.path.abspath("Minecraft-servers")
+BASE_DIR = os.path.abspath("minecraft-servers")
 os.makedirs(BASE_DIR, exist_ok=True)
 
 # Actualiza el sistema y Python

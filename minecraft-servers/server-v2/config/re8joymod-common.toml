@@ -1,0 +1,138 @@
+
+[biome]
+	#By default 1 in 30 Sand Plains biomes can contain either an Oasis or Dead Oasis. Set to 0 to disable both oases biomes.
+	#Range: 0 ~ 10000
+	"Oases chance" = 30
+	#Sets the percentage chance for oases to generate as an Oasis. The remaining oases will generate as an Dead Oasis. Set to 0 to only get Dead Oasis or to 100 to only get Oasis
+	#Range: 0 ~ 10000
+	"Oasis percentage" = 50
+
+	[biome.re8_wasteland_biome]
+		#Range: -1 ~ 1000
+		weight = 30
+
+	[biome.re8_edesert_biome]
+		#Range: -1 ~ 1000
+		weight = 30
+
+	[biome.re8_eforest_biome]
+		#Range: -1 ~ 1000
+		weight = 30
+
+	[biome.re8_evalley_biome]
+		#Range: -1 ~ 1000
+		weight = 30
+
+	[biome.re8_ehills_biome]
+		#Range: -1 ~ 1000
+		weight = 30
+
+["Configs for Resident Evil 8 Mod"]
+	#How many Fantom Ore Veins spawn per chunk!
+	"Veins Per Chunk" = 6
+	#How many Fantom Ore Blocks spawn in one Vein!
+	#Range: 4 ~ 10
+	"Vein Size" = 5
+
+	["Configs for Resident Evil 8 Mod".entity]
+		#Determining if the screen is shaking during an earthquake.
+		screenshake = true
+		#Determine whether an execute operation can be performed.(the percentage of an enemy's max health)
+		execute = 0.2
+
+		["Configs for Resident Evil 8 Mod".entity.whitepig]
+			#Spawn White Pig
+			spawnrate = 2
+
+		["Configs for Resident Evil 8 Mod".entity.blackpig]
+			#Spawn Black Pig
+			spawnrate = 3
+
+		["Configs for Resident Evil 8 Mod".entity.ethan]
+			#Spawn Ethan
+			spawnrate = 1
+
+		["Configs for Resident Evil 8 Mod".entity.mia]
+			#Spawn Mia
+			spawnrate = 1
+
+		["Configs for Resident Evil 8 Mod".entity.rosemary]
+			#Spawn RoseMary
+			spawnrate = 1
+
+		["Configs for Resident Evil 8 Mod".entity.chris]
+			#Spawn Spawn Leon、Ada、Chris Redfield
+			spawnrate = 1
+
+		["Configs for Resident Evil 8 Mod".entity.mycete]
+			#Spawn Mycete
+			spawnrate = 1
+
+		["Configs for Resident Evil 8 Mod".entity.mmycete]
+			#Spawn Mega Mycete
+			spawnrate = 1
+
+		["Configs for Resident Evil 8 Mod".entity.hag]
+			#Spawn The Hag
+			spawnrate = 2
+
+		["Configs for Resident Evil 8 Mod".entity.doll1]
+			#Spawn Doll1
+			spawnrate = 3
+
+		["Configs for Resident Evil 8 Mod".entity.doll2]
+			#Spawn Doll2
+			spawnrate = 2
+
+		["Configs for Resident Evil 8 Mod".entity.baby]
+			#Spawn baby
+			spawnrate = 8
+
+		["Configs for Resident Evil 8 Mod".entity.bela]
+			#Spawn Bela
+			spawnrate = 2
+
+		["Configs for Resident Evil 8 Mod".entity.cassandra]
+			#Spawn Cassandra
+			spawnrate = 2
+
+		["Configs for Resident Evil 8 Mod".entity.daniela]
+			#Spawn Daniela
+			spawnrate = 2
+
+		["Configs for Resident Evil 8 Mod".entity.lycan]
+			#Spawn Lycan
+			spawnrate = 7
+
+		["Configs for Resident Evil 8 Mod".entity.sturm]
+			#Spawn Sturm,Soldat Panzer,Varcolac,Ada Wong
+			spawnrate = 2
+
+		["Configs for Resident Evil 8 Mod".entity.moroaicas]
+			#Spawn Moroaicas,Hauler,Soldat Eins
+			spawnrate = 8
+
+		["Configs for Resident Evil 8 Mod".entity.samca]
+			#Spawn Samca
+			spawnrate = 6
+
+		["Configs for Resident Evil 8 Mod".entity.frank4]
+			#Spawn Soldat Jet
+			spawnrate = 3
+
+		["Configs for Resident Evil 8 Mod".entity.zwei]
+			#Spawn Moroaicas(Blood Thirsty),Soldat Zwei,Donna's Doll3,Lycan(Large),Lycan Archer(Only Spawn in the hell)
+			spawnrate = 3
+
+		["Configs for Resident Evil 8 Mod".entity.angie]
+			#Spawn Angie(Only Spawn in the hell)
+			spawnrate = 2
+
+		["Configs for Resident Evil 8 Mod".entity.manne]
+			#Spawn Mannequin、Armadura
+			spawnrate = 3
+
+		["Configs for Resident Evil 8 Mod".entity.plagas]
+			#Spawn Plagas
+			spawnrate = 10
+

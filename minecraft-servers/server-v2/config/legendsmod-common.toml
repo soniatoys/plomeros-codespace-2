@@ -1,0 +1,5 @@
+
+["Configs for Legends Mod"]
+	#Does heightened perception affect game ticks? WARNING: WILL AFFECT SERVER TIME AS WELL!
+	"Heightened Perception Classic Mode" = false
+

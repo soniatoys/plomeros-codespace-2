@@ -1,0 +1,20 @@
+TAC_AI_AWP:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: TAC_AI_AWP
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    internal: H4sIAAAAAAAA/+NiYGBm4HTMzc13zi/NK2FgYGBjZuB3Li0qSs0rccssSvXNT0kFijIyM7DmpJal5oDY3AxCxaUFBflFJakpMDXFIAmIJJOnC5DB0vH4o4fjYp99S7+dnv3es+cbKwMH2ASX3HSnJUAFAIkIsX97AAAA
+BOTANIA_RUNE_WATER:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: BOTANIA_RUNE_WATER
+TAC_LAPUA338:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: TAC_LAPUA338
+GRASS_BLOCK:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: GRASS_BLOCK

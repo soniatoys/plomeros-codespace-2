@@ -1,0 +1,5 @@
+
+[general]
+	#Whether entities will sleep or not. Default is true.
+	"Sleep AI" = true
+
