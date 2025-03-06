@@ -359,6 +359,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/golden_carrot": {
+    "criteria": {
+      "has_gold_nugget": "2025-03-04 02:39:48 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/shield": {
     "criteria": {
       "has_iron_ingot": "2025-02-28 02:14:59 +0000"
@@ -557,6 +563,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/andesite_stairs_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_crimson_fence_gate": {
     "criteria": {
       "has_stick": "2025-02-28 01:31:47 +0000"
@@ -607,10 +619,12 @@
       "highland": "2025-02-28 04:26:16 +0000",
       "bamboo_grove": "2025-02-28 03:48:55 +0000",
       "clover_patch": "2025-03-01 00:06:05 +0000",
+      "lavender_forest": "2025-03-04 02:54:53 +0000",
       "coniferous_forest": "2025-02-28 02:02:20 +0000",
       "redwood_forest": "2025-03-01 00:01:41 +0000",
       "highland_moor": "2025-02-28 03:48:26 +0000",
       "seasonal_forest": "2025-02-28 02:57:30 +0000",
+      "lavender_field": "2025-03-04 03:01:57 +0000",
       "fir_clearing": "2025-02-28 03:11:06 +0000",
       "grassland": "2025-02-28 23:43:55 +0000"
     },
@@ -676,6 +690,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_andesite_slab_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
+    },
+    "done": true
+  },
   "ironchest:recipes/ironchest/chests/copper_iron_chest": {
     "criteria": {
       "has_item": "2025-02-28 02:14:59 +0000"
@@ -685,6 +705,12 @@
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "in_water": "2025-02-28 02:01:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2025-03-04 02:39:53 +0000"
     },
     "done": true
   },
@@ -790,7 +816,7 @@
   },
   "incendium:technical/sentrys_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
     "done": false
   },
@@ -863,6 +889,12 @@
   "minecraft:recipes/building_blocks/deepslate_bricks": {
     "criteria": {
       "has_polished_deepslate": "2025-02-28 05:20:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/granite_wall_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
     },
     "done": true
   },
@@ -980,6 +1012,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/raw_copper_block": {
+    "criteria": {
+      "has_raw_copper": "2025-03-04 02:39:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite_stairs": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
+    },
+    "done": true
+  },
   "croptopia:recipes/hamburger": {
     "criteria": {
       "has_beef": "2025-02-28 01:33:03 +0000"
@@ -1064,6 +1108,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/glass_bottle": {
     "criteria": {
       "has_glass": "2025-02-28 22:07:46 +0000"
@@ -1102,9 +1152,15 @@
   },
   "incendium:technical/inventory/sentrys_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
     "done": false
+  },
+  "tconstruct:recipes/tconstruct/gadgets/gadgets/frame/gold": {
+    "criteria": {
+      "has_item": "2025-03-04 02:39:48 +0000"
+    },
+    "done": true
   },
   "securitycraft:recipes/securitycraft/reinforced_black_stained_glass_pane_from_glass": {
     "criteria": {
@@ -1328,6 +1384,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/granite_stairs_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/red_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-02-28 01:31:47 +0000"
@@ -1414,9 +1482,15 @@
   },
   "incendium:technical/multiplex_crossbow": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
     "done": false
+  },
+  "minecraft:recipes/decorations/diorite_wall": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
+    },
+    "done": true
   },
   "securitycraft:recipes/securitycraft/limited_use_keycard": {
     "criteria": {
@@ -1432,7 +1506,7 @@
   },
   "incendium:technical/firestorm": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
     "done": false
   },
@@ -1456,6 +1530,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:snowy_slopes": "2025-03-04 02:56:00 +0000",
       "minecraft:taiga": "2025-02-28 23:59:06 +0000",
       "minecraft:birch_forest": "2025-02-28 23:44:20 +0000",
       "minecraft:beach": "2025-02-28 02:01:37 +0000",
@@ -1546,7 +1621,7 @@
   },
   "incendium:technical/holy_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
     "done": false
   },
@@ -1724,6 +1799,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2025-02-28 01:31:47 +0000"
@@ -1748,9 +1829,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/andesite_wall": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_lime_stained_glass_pane_from_glass": {
     "criteria": {
       "has_glass": "2025-02-28 22:07:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_slab": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
     },
     "done": true
   },
@@ -1832,17 +1925,17 @@
     },
     "done": true
   },
-  "incendium:technical/on_block": {
-    "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
-    },
-    "done": false
-  },
   "minecraft:recipes/building_blocks/purple_wool": {
     "criteria": {
       "has_white_wool": "2025-03-01 04:48:31 +0000"
     },
     "done": true
+  },
+  "incendium:technical/on_block": {
+    "criteria": {
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
+    },
+    "done": false
   },
   "minecraft:recipes/building_blocks/deepslate_tile_slab_from_polished_deepslate_stonecutting": {
     "criteria": {
@@ -1898,6 +1991,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_spruce_fence": {
     "criteria": {
       "has_stick": "2025-02-28 01:31:47 +0000"
@@ -1937,6 +2036,12 @@
   "minecraft:recipes/decorations/deepslate_brick_wall_from_polished_deepslate_stonecutting": {
     "criteria": {
       "has_polished_deepslate": "2025-02-28 05:20:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
     },
     "done": true
   },
@@ -2096,6 +2201,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_granite_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/gold_nugget": {
     "criteria": {
       "has_gold_ingot": "2025-02-28 03:13:22 +0000"
@@ -2152,6 +2263,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_slab": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
+    },
+    "done": true
+  },
   "biomesoplenty:recipes/transportation/magic_boat": {
     "criteria": {
       "in_water": "2025-02-28 02:01:09 +0000"
@@ -2179,6 +2296,12 @@
   "ironchest:recipes/ironchest/upgrades/gold_to_diamond_chest_upgrade": {
     "criteria": {
       "has_glass": "2025-02-28 22:07:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/granite_wall": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
     },
     "done": true
   },
@@ -2233,6 +2356,12 @@
   "minecraft:recipes/building_blocks/deepslate_tiles_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2025-02-28 01:31:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
     },
     "done": true
   },
@@ -2293,6 +2422,12 @@
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-02-28 01:31:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/diorite_wall_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
     },
     "done": true
   },
@@ -2368,6 +2503,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/andesite_stairs": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/orange_wool": {
     "criteria": {
       "has_white_wool": "2025-03-01 04:48:31 +0000"
@@ -2440,6 +2581,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_granite_slab_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/green_concrete_powder": {
     "criteria": {
       "has_gravel": "2025-02-28 01:31:47 +0000"
@@ -2458,6 +2605,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_andesite_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_shovel": {
     "criteria": {
       "has_iron_ingot": "2025-02-28 02:14:59 +0000"
@@ -2472,7 +2625,7 @@
   },
   "incendium:technical/inventory/firestorm": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
     "done": false
   },
@@ -2536,6 +2689,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/granite_slab": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/white_carpet": {
     "criteria": {
       "has_white_wool": "2025-03-01 04:48:31 +0000"
@@ -2584,6 +2743,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
+    "criteria": {
+      "has_gold_nugget": "2025-03-04 02:39:48 +0000"
+    },
+    "done": true
+  },
   "bmorph:bmorph/shapeshifter": {
     "criteria": {
       "requirement": "2025-02-28 01:51:01 +0000"
@@ -2620,6 +2785,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_granite_stairs_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
+    },
+    "done": true
+  },
   "tconstruct:recipes/misc/common/flint": {
     "criteria": {
       "has_item": "2025-02-28 01:31:47 +0000"
@@ -2652,7 +2823,7 @@
   },
   "incendium:technical/on_inventory_change": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
     "done": false
   },
@@ -2713,6 +2884,12 @@
   "securitycraft:recipes/securitycraft/reinforced_cyan_stained_glass": {
     "criteria": {
       "has_glass": "2025-02-28 22:07:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
     },
     "done": true
   },
@@ -2866,6 +3043,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/andesite_slab_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
       "has_coal": "2025-02-28 01:48:09 +0000"
@@ -2914,6 +3097,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_stairs": {
+    "criteria": {
+      "has_diorite": "2025-03-04 02:39:56 +0000"
+    },
+    "done": true
+  },
   "chococraft:recipes/chococraft/chocobo_whistle": {
     "criteria": {
       "has_chocobo_feather": "2025-02-28 22:39:40 +0000"
@@ -2923,6 +3112,12 @@
   "ironchest:recipes/ironchest/upgrades/diamond_to_obsidian_chest_upgrade": {
     "criteria": {
       "has_glass": "2025-02-28 22:07:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite_slab_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
     },
     "done": true
   },
@@ -2959,6 +3154,12 @@
   "minecraft:recipes/building_blocks/polished_deepslate_stairs_from_polished_deepslate_stonecutting": {
     "criteria": {
       "has_polished_deepslate": "2025-02-28 05:20:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite": {
+    "criteria": {
+      "has_stone": "2025-03-04 02:39:56 +0000"
     },
     "done": true
   },
@@ -3124,6 +3325,12 @@
     },
     "done": true
   },
+  "alexsmobs:recipes/misc/cockroach_wing": {
+    "criteria": {
+      "has_items": "2025-03-04 02:39:56 +0000"
+    },
+    "done": true
+  },
   "alexsmobs:recipes/building_blocks/bison_fur_to_wool": {
     "criteria": {
       "has_items": "2025-02-28 01:33:03 +0000"
@@ -3133,6 +3340,12 @@
   "minecraft:adventure/ol_betsy": {
     "criteria": {
       "shot_crossbow": "2025-02-28 02:36:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
     },
     "done": true
   },
@@ -3175,6 +3388,12 @@
   "tconstruct:recipes/tconstruct/gadgets/gadgets/throwball/efln_ball": {
     "criteria": {
       "has_item": "2025-03-01 00:12:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2025-03-04 02:39:53 +0000"
     },
     "done": true
   },
@@ -3282,7 +3501,7 @@
   },
   "incendium:technical/on_kill": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
     "done": false
   },
@@ -3316,11 +3535,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/andesite_wall_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2025-03-04 02:39:49 +0000"
+    },
+    "done": true
+  },
   "incendium:technical/on_player_hurt": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 04:50:03 +0000"
+      "requirement": "2025-03-04 03:02:43 +0000",
+      "log_spam_fixer": "2025-03-04 03:02:13 +0000"
     },
-    "done": false
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite": {
+    "criteria": {
+      "has_granite": "2025-03-04 02:39:51 +0000"
+    },
+    "done": true
   },
   "securitycraft:recipes/securitycraft/reinforced_white_stained_glass": {
     "criteria": {

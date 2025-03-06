@@ -185,6 +185,12 @@
     },
     "done": true
   },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/gold_backpack": {
+    "criteria": {
+      "has_iron_backpack": "2025-03-04 02:25:40 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/ladder": {
     "criteria": {
       "has_stick": "2025-02-28 01:59:26 +0000"
@@ -336,6 +342,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_rabbit_from_smoking": {
+    "criteria": {
+      "has_rabbit": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/reinforced_dark_oak_fence_gate": {
     "criteria": {
       "has_stick": "2025-02-28 01:59:26 +0000"
@@ -420,6 +432,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/deepslate_tiles_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "chococraft:recipes/chococraft/pickled_gysahl_raw": {
     "criteria": {
       "has_gysahl_green": "2025-02-28 02:08:53 +0000"
@@ -447,6 +465,12 @@
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2025-02-28 02:48:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -664,8 +688,10 @@
     "criteria": {
       "shrubland": "2025-02-28 02:08:57 +0000",
       "rocky_shrubland": "2025-02-28 02:08:51 +0000",
+      "marsh": "2025-03-04 02:29:52 +0000",
       "clover_patch": "2025-03-01 03:53:24 +0000",
       "field": "2025-03-01 05:13:42 +0000",
+      "lavender_forest": "2025-03-04 02:54:34 +0000",
       "mediterranean_forest": "2025-03-01 05:38:15 +0000",
       "coniferous_forest": "2025-02-28 02:06:23 +0000",
       "spider_nest": "2025-02-28 02:47:53 +0000",
@@ -705,6 +731,12 @@
     },
     "done": true
   },
+  "croptopia:recipes/pork_and_beans": {
+    "criteria": {
+      "has_pork": "2025-03-04 02:29:05 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/sandstone": {
     "criteria": {
       "has_sand": "2025-03-01 16:19:48 +0000"
@@ -726,6 +758,12 @@
   "minecraft:story/lava_bucket": {
     "criteria": {
       "lava_bucket": "2025-03-01 03:37:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit_from_campfire_cooking": {
+    "criteria": {
+      "has_rabbit": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -849,6 +887,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/polished_deepslate_wall": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "croptopia:recipes/croptopia.croptopia/pumpkin_bars": {
     "criteria": {
       "has_pumpkin": "2025-02-28 01:59:26 +0000"
@@ -911,7 +955,7 @@
   },
   "incendium:technical/sentrys_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
   },
@@ -990,6 +1034,12 @@
   "minecraft:recipes/decorations/prismarine_wall_from_prismarine_stonecutting": {
     "criteria": {
       "has_prismarine": "2025-03-01 05:32:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_bricks": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -1083,6 +1133,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2025-03-04 02:29:05 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_slab": {
     "criteria": {
       "has_planks": "2025-02-28 01:59:26 +0000"
@@ -1104,6 +1160,12 @@
   "minecraft:recipes/building_blocks/raw_copper_block": {
     "criteria": {
       "has_raw_copper": "2025-02-28 03:50:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2025-03-04 02:29:05 +0000"
     },
     "done": true
   },
@@ -1179,6 +1241,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/polished_deepslate_wall_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/deepslate_tile_wall_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2025-03-01 03:15:05 +0000"
@@ -1215,9 +1283,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/blue_dye_from_cornflower": {
+    "criteria": {
+      "has_cornflower": "2025-03-04 02:18:08 +0000"
+    },
+    "done": true
+  },
   "securitycraft:recipes/securitycraft/universal_key_changer": {
     "criteria": {
       "has_redstone": "2025-02-28 01:59:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leather": {
+    "criteria": {
+      "has_rabbit_hide": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -1241,7 +1321,7 @@
   },
   "incendium:technical/inventory/sentrys_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
   },
@@ -1390,6 +1470,18 @@
     },
     "done": true
   },
+  "croptopia:recipes/shaped_bacon": {
+    "criteria": {
+      "has_porkchop": "2025-03-04 02:29:05 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_bricks_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/tripwire_hook": {
     "criteria": {
       "has_string": "2025-02-28 01:59:26 +0000"
@@ -1441,6 +1533,12 @@
   "tconstruct:recipes/tconstruct/general/common/gold_bars": {
     "criteria": {
       "has_ingot": "2025-03-01 04:57:29 +0000"
+    },
+    "done": true
+  },
+  "enemyexpansion:meathead_obtained": {
+    "criteria": {
+      "meathead_obtained": "2025-03-04 02:28:10 +0000"
     },
     "done": true
   },
@@ -1531,6 +1629,12 @@
   "minecraft:recipes/decorations/oak_sign": {
     "criteria": {
       "has_planks": "2025-02-28 01:59:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2025-03-04 02:29:05 +0000"
     },
     "done": true
   },
@@ -1668,7 +1772,7 @@
   },
   "incendium:technical/multiplex_crossbow": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
   },
@@ -1698,7 +1802,7 @@
   },
   "incendium:technical/firestorm": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
   },
@@ -1725,12 +1829,14 @@
       "minecraft:taiga": "2025-03-01 05:12:32 +0000",
       "minecraft:deep_ocean": "2025-03-01 05:04:14 +0000",
       "minecraft:sunflower_plains": "2025-03-01 05:43:23 +0000",
+      "minecraft:birch_forest": "2025-03-04 02:32:23 +0000",
       "minecraft:windswept_hills": "2025-03-01 05:12:23 +0000",
       "minecraft:beach": "2025-02-28 02:19:29 +0000",
       "minecraft:sparse_jungle": "2025-03-01 03:55:44 +0000",
       "minecraft:river": "2025-02-28 02:14:20 +0000",
       "minecraft:lukewarm_ocean": "2025-03-01 03:56:49 +0000",
       "minecraft:dripstone_caves": "2025-02-28 02:49:20 +0000",
+      "minecraft:swamp": "2025-03-04 02:28:48 +0000",
       "minecraft:cold_ocean": "2025-03-01 05:06:05 +0000",
       "minecraft:forest": "2025-02-28 03:04:16 +0000",
       "minecraft:windswept_forest": "2025-03-01 05:12:36 +0000",
@@ -1805,6 +1911,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_deepslate_slab": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
     "criteria": {
       "has_raw_iron": "2025-02-28 01:59:26 +0000"
@@ -1837,7 +1949,7 @@
   },
   "incendium:technical/holy_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
   },
@@ -2149,9 +2261,15 @@
   },
   "incendium:technical/on_block": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_slab_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
   },
   "ironchest:recipes/ironchest/chests/vanilla_copper_chest": {
     "criteria": {
@@ -2282,6 +2400,12 @@
   "minecraft:recipes/building_blocks/diorite_slab_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2025-02-28 02:48:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_brick_wall_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -2498,6 +2622,7 @@
       "baked_potato": "2025-03-01 04:54:15 +0000",
       "apple": "2025-02-28 03:26:27 +0000",
       "bread": "2025-02-28 02:24:06 +0000",
+      "golden_apple": "2025-03-04 02:45:31 +0000",
       "rotten_flesh": "2025-02-28 02:20:27 +0000",
       "cookie": "2025-03-01 03:18:46 +0000",
       "salmon": "2025-02-28 03:35:21 +0000",
@@ -2582,6 +2707,12 @@
   "minecraft:recipes/decorations/yellow_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2025-02-28 02:33:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_slab_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -2861,6 +2992,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/deepslate_tile_stairs_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/redstone_torch": {
     "criteria": {
       "has_redstone": "2025-02-28 01:59:26 +0000"
@@ -2953,7 +3090,7 @@
   },
   "incendium:technical/inventory/firestorm": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
   },
@@ -3014,6 +3151,12 @@
   "minecraft:recipes/tools/stone_hoe": {
     "criteria": {
       "has_cobblestone": "2025-02-28 01:59:26 +0000"
+    },
+    "done": true
+  },
+  "croptopia:recipes/carnitas": {
+    "criteria": {
+      "has_porkchop": "2025-03-04 02:29:05 +0000"
     },
     "done": true
   },
@@ -3211,7 +3354,7 @@
   },
   "incendium:technical/on_inventory_change": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
   },
@@ -3248,6 +3391,12 @@
   "minecraft:recipes/decorations/spruce_sign": {
     "criteria": {
       "has_planks": "2025-03-01 05:21:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_tile_wall_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -3314,6 +3463,12 @@
   "securitycraft:recipes/securitycraft/bouncing_betty": {
     "criteria": {
       "has_iron": "2025-02-28 02:27:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -3557,6 +3712,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_deepslate_stairs_from_polished_deepslate_stonecutting": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/prismarine_stairs_from_prismarine_stonecutting": {
     "criteria": {
       "has_prismarine": "2025-03-01 05:32:37 +0000"
@@ -3647,6 +3808,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_deepslate_stairs": {
+    "criteria": {
+      "has_polished_deepslate": "2025-03-04 02:36:01 +0000"
+    },
+    "done": true
+  },
   "ironchest:recipes/ironchest/chests/gold_diamond_chest": {
     "criteria": {
       "has_diamonds": "2025-02-28 02:01:12 +0000"
@@ -3704,6 +3871,12 @@
   "minecraft:story/form_obsidian": {
     "criteria": {
       "obsidian": "2025-03-01 03:34:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit": {
+    "criteria": {
+      "has_rabbit": "2025-03-04 02:36:01 +0000"
     },
     "done": true
   },
@@ -3938,7 +4111,7 @@
   },
   "incendium:technical/on_kill": {
     "criteria": {
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
     "done": false
   },
@@ -3992,10 +4165,9 @@
   },
   "incendium:technical/on_player_hurt": {
     "criteria": {
-      "requirement": "2025-03-01 17:13:02 +0000",
-      "log_spam_fixer": "2025-03-01 17:12:11 +0000"
+      "log_spam_fixer": "2025-03-04 03:02:14 +0000"
     },
-    "done": true
+    "done": false
   },
   "minecraft:recipes/redstone/jungle_door": {
     "criteria": {
